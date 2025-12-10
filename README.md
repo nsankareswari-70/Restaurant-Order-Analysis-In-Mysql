@@ -83,6 +83,8 @@ where category ='Italian';
 ```sql
 -- 5. What are the least and most expensive Italian dishes on the menu?
 select * from menu_items where category='Italian' order by price desc;
+```
+<img src="https://github.com/nsankareswari-70/Restaurant-Order-Analysis-In-Mysql/blob/3b3214bfca9594c73765c41e67ebced46283820a/rest5.png">
 
 -- 6. How many dishes are in each category?
 select category,count(category) as Total_dishes from menu_items 
