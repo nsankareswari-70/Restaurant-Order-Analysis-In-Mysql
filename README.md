@@ -65,6 +65,8 @@ select * from menu_items order by price desc limit 1;
 -- 4. How many Italian dishes are on the menu?
 select count(category) as Total_Italian_Dishes from menu_items 
 where category ='Italian';
+```
+<img src="https://github.com/nsankareswari-70/Restaurant-Order-Analysis-In-Mysql/blob/3b3214bfca9594c73765c41e67ebced46283820a/rest2.png">
 
 -- 5. What are the least and most expensive Italian dishes on the menu?
 select * from menu_items where category='Italian' order by price desc;
