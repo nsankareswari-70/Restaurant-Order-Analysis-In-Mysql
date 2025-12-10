@@ -137,7 +137,7 @@ Number_of_items desc) as tw;
 
 Result : 20 Items
 ```
-
+```sql
 select * from menu_items;
 select * from order_details;
 
@@ -146,13 +146,18 @@ select od.order_details_id,od.order_id,od.order_date,od.order_time,od.item_id,
 mi.menu_item_id,mi.item_name,mi.category,mi.price from order_details od join
 menu_items mi on
 od.item_id = mi.menu_item_id;
+```
+<img src="https://github.com/nsankareswari-70/Restaurant-Order-Analysis-In-Mysql/blob/7f2c2b60b4bad2c10ba8eba0334740099326f511/rest17.png">
+
+```sql
 
 -- 2. what were the least and most ordered items? what categories were they in?
 select item_id,item_name,category,count(item_id) as least_ordered_item from 
 order_details od join menu_items mi on
 od.item_id = mi.menu_item_id
 group by item_id order by least_ordered_item limit 1;
-
+```
+<img src="https://github.com/nsankareswari-70/Restaurant-Order-Analysis-In-Mysql/blob/7f2c2b60b4bad2c10ba8eba0334740099326f511/rest8.png">
 select item_id,item_name,category,count(item_id) as most_ordered_item from 
 order_details od join menu_items mi on
 od.item_id = mi.menu_item_id
