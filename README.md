@@ -147,7 +147,7 @@ mi.menu_item_id,mi.item_name,mi.category,mi.price from order_details od join
 menu_items mi on
 od.item_id = mi.menu_item_id;
 ```
-<img src="https://github.com/nsankareswari-70/Restaurant-Order-Analysis-In-Mysql/blob/7f2c2b60b4bad2c10ba8eba0334740099326f511/rest17.png">
+<img src="https://github.com/nsankareswari-70/Restaurant-Order-Analysis-In-Mysql/blob/7f2c2b60b4bad2c10ba8eba0334740099326f511/rest8.png">
 
 ```sql
 
