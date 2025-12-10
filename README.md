@@ -208,7 +208,7 @@ group by category;
 <img src="https://github.com/nsankareswari-70/Restaurant-Order-Analysis-In-Mysql/blob/7f2c2b60b4bad2c10ba8eba0334740099326f511/rest13.png">
 
 
-
+```sql
 -- 5.View the details of the top 5 highest spend orders. What insights can you gather from the result.
 select order_id,sum(price) as Total_spent from order_details od
 join menu_items mi on
@@ -220,13 +220,19 @@ select category,count(category) as itemspercategory from order_details od join
 menu_items mi on 
 od.item_id = mi.menu_item_id where order_id in (440,2075,1957,330,2675)
 group by category;
+```
+<img src="https://github.com/nsankareswari-70/Restaurant-Order-Analysis-In-Mysql/blob/7f2c2b60b4bad2c10ba8eba0334740099326f511/rest14.png">
 
+```sql
 -- To view the categories in each order_id
 select order_id,category,count(category) as itemspercategory from order_details od join
 menu_items mi on 
 od.item_id = mi.menu_item_id where order_id in (440,2075,1957,330,2675)
 group by category,order_id;
 ```
+<img src="https://github.com/nsankareswari-70/Restaurant-Order-Analysis-In-Mysql/blob/7f2c2b60b4bad2c10ba8eba0334740099326f511/rest15.png">
 
+
+End of Project
 
 
