@@ -205,7 +205,7 @@ group by category;
 ```
 
 
-<img src="https://github.com/nsankareswari-70/Restaurant-Order-Analysis-In-Mysql/blob/7f2c2b60b4bad2c10ba8eba0334740099326f511/rest17.png">
+<img src="https://github.com/nsankareswari-70/Restaurant-Order-Analysis-In-Mysql/blob/7f2c2b60b4bad2c10ba8eba0334740099326f511/rest13.png">
 
 
 
