@@ -53,6 +53,8 @@ select * from menu_items;
 -- 2. Find the number of items on the menu.
 select count(distinct(menu_item_id)) as Number_of_Menu_Items from menu_items;
 
+
+
 -- 3. What are the least and most expensive items on the menu?
 -- Least expensive item on the menu
 select * from menu_items order by price limit 1;
