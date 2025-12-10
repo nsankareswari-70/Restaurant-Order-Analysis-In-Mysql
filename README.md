@@ -93,6 +93,8 @@ select category,count(category) as Total_dishes from menu_items
 group by category order by Total_dishes desc;
 ```
 <img src="https://github.com/nsankareswari-70/Restaurant-Order-Analysis-In-Mysql/blob/3b3214bfca9594c73765c41e67ebced46283820a/rest6.png">
+
+
 ```sql
 -- 7. What is the average dish price within each category?
 select category,round(avg(price),2) as Avg_dish_price from menu_items
@@ -108,6 +110,8 @@ select * from order_details;
 
 -- 2. What is the date range of the table?
 select min(order_date) as Startdate,max(order_date) as Enddate from order_details;
+```
+
 
 -- 3. How many orders were made within this date range?
 select count(distinct(order_id)) as Total_orders from order_details;
