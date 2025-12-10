@@ -85,17 +85,21 @@ where category ='Italian';
 select * from menu_items where category='Italian' order by price desc;
 ```
 <img src="https://github.com/nsankareswari-70/Restaurant-Order-Analysis-In-Mysql/blob/3b3214bfca9594c73765c41e67ebced46283820a/rest5.png">
+
+
 ```sql
 -- 6. How many dishes are in each category?
 select category,count(category) as Total_dishes from menu_items 
 group by category order by Total_dishes desc;
 ```
 <img src="https://github.com/nsankareswari-70/Restaurant-Order-Analysis-In-Mysql/blob/3b3214bfca9594c73765c41e67ebced46283820a/rest6.png">
-
+```sql
 -- 7. What is the average dish price within each category?
 select category,round(avg(price),2) as Avg_dish_price from menu_items
 group by category order by Avg_dish_price desc;
 ```
+<img src="https://github.com/nsankareswari-70/Restaurant-Order-Analysis-In-Mysql/blob/3b3214bfca9594c73765c41e67ebced46283820a/rest7.png">
+
 
 ```sql
 -- Queries for Order_details table
