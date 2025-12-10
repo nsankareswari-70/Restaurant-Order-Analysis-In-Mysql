@@ -69,12 +69,14 @@ select * from menu_items order by price limit 1;
 select * from menu_items order by price desc limit 1;
 ```
 <img src="https://github.com/nsankareswari-70/Restaurant-Order-Analysis-In-Mysql/blob/3b3214bfca9594c73765c41e67ebced46283820a/rest4.png">
+
+
 ```sql
 -- 4. How many Italian dishes are on the menu?
 select count(category) as Total_Italian_Dishes from menu_items 
 where category ='Italian';
 ```
-
+<img src="https://github.com/nsankareswari-70/Restaurant-Order-Analysis-In-Mysql/blob/3b3214bfca9594c73765c41e67ebced46283820a/rest2.png">
 
 
 
