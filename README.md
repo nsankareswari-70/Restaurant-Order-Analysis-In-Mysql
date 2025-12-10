@@ -124,6 +124,8 @@ select count(*) as Total_items_ordered from order_details;
 -- 5. which orders had the most number of items?
 select order_id,count(*) as Number_of_items from order_details
 group by order_id order by Number_of_items desc;
+```
+<img src="https://github.com/nsankareswari-70/Restaurant-Order-Analysis-In-Mysql/blob/f24a007f30d486c55ff615a22778caf98974c1f1/rest17.png">
 
 
 -- 6. How many orders had more than 12 items
