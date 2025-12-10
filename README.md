@@ -157,7 +157,11 @@ order_details od join menu_items mi on
 od.item_id = mi.menu_item_id
 group by item_id order by least_ordered_item limit 1;
 ```
+
+
 <img src="https://github.com/nsankareswari-70/Restaurant-Order-Analysis-In-Mysql/blob/7f2c2b60b4bad2c10ba8eba0334740099326f511/rest9.png">
+
+
 ```sql
 select item_id,item_name,category,count(item_id) as most_ordered_item from 
 order_details od join menu_items mi on
@@ -166,19 +170,25 @@ group by item_id order by most_ordered_item desc limit 1;
 ```
 <img src="https://github.com/nsankareswari-70/Restaurant-Order-Analysis-In-Mysql/blob/7f2c2b60b4bad2c10ba8eba0334740099326f511/rest10.png">
 ```sql
+
+
 -- 3. what were the top 5 orders that spent the most money?
 select order_id,sum(price) as Total_spent from order_details od
 join menu_items mi on
 od.item_id = mi.menu_item_id
 group by order_id order by Total_spent desc limit 5;
 ```
+
 <img src="https://github.com/nsankareswari-70/Restaurant-Order-Analysis-In-Mysql/blob/7f2c2b60b4bad2c10ba8eba0334740099326f511/rest11.png">
+
+```sql
 -- 4. View the details of the Highest spent order.
 select order_id,sum(price) as Total_spent from order_details od
 join menu_items mi on
 od.item_id = mi.menu_item_id
 group by order_id order by Total_spent desc limit 1;
-
+```
+<img src="https://github.com/nsankareswari-70/Restaurant-Order-Analysis-In-Mysql/blob/7f2c2b60b4bad2c10ba8eba0334740099326f511/rest12.png">
 -- From this to get the details of order_id 440
 select order_id,item_name,category,price from order_details od join
 menu_items mi on 
