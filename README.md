@@ -75,7 +75,7 @@ select category,round(avg(price),2) as Avg_dish_price from menu_items
 group by category order by Avg_dish_price desc;
 ```
 
-```
+```sql
 -- Queries for Order_details table
 -- 1. View the order_details table
 select * from order_details;
@@ -158,6 +158,7 @@ select order_id,category,count(category) as itemspercategory from order_details 
 menu_items mi on 
 od.item_id = mi.menu_item_id where order_id in (440,2075,1957,330,2675)
 group by category,order_id;
+```
 
 
 
