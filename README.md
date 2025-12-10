@@ -135,6 +135,7 @@ select order_id,count(item_id) as Number_of_items from order_details
 group by order_id having Number_of_items > 12 order by
 Number_of_items desc) as tw;
 
+Result : 20 Items
 ```
 
 select * from menu_items;
