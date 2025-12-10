@@ -59,8 +59,12 @@ select count(distinct(menu_item_id)) as Number_of_Menu_Items from menu_items;
 -- 3. What are the least and most expensive items on the menu?
 -- Least expensive item on the menu
 select * from menu_items order by price limit 1;
+```
+<img src="https://github.com/nsankareswari-70/Restaurant-Order-Analysis-In-Mysql/blob/63686d9d58e46f46886ce14f3072781c09246587/rest3.png">
+```sql
 -- Most expensive item on the menu
 select * from menu_items order by price desc limit 1;
+```
 
 -- 4. How many Italian dishes are on the menu?
 select count(category) as Total_Italian_Dishes from menu_items 
